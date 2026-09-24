@@ -1,0 +1,9 @@
+<resources>
+    <color name="primary">#1E6F5C</color>
+    <color name="primary_container">#D8F3DC</color>
+    <color name="secondary">#289672</color>
+    <color name="background_light">#F8FAF9</color>
+    <color name="background_dark">#121816</color>
+    <color name="expense_red">#D32F2F</color>
+    <color name="income_green">#2E7D32</color>
+</resources>

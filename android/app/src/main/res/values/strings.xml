@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Mon Budget</string>
+    <string name="currency_default">FCFA</string>
+    <string name="nav_dashboard">Tableau de bord</string>
+    <string name="nav_incomes">Revenus</string>
+    <string name="nav_expenses">Dépenses</string>
+    <string name="nav_transactions">Transactions</string>
+    <string name="nav_budgets">Budgets</string>
+    <string name="nav_savings">Épargne</string>
+    <string name="nav_stats">Statistiques</string>
+    <string name="nav_settings">Paramètres</string>
+</resources>

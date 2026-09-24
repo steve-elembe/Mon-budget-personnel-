@@ -1,0 +1,6 @@
+{
+  "name": "Mon Budget",
+  "description": "Application Android native de gestion budgétaire personnelle et d'épargne en FCFA (XAF), avec Jetpack Compose, Material 3, Room Database et architecture MVVM offline-first.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
