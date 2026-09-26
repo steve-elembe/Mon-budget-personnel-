@@ -44,7 +44,7 @@ class BudgetViewModel(private val repository: BudgetRepository) : ViewModel() {
         var monthExpense = 0.0
 
         txList.forEach { tx ->
-            val txCal = Calendar.getInstance().apply { timeInMillis = tx.date }
+            val txCal = Calendar.getInstance().apply { timeInMillis = tx.timestamp }
             val isCurrentMonth = txCal.get(Calendar.MONTH) == currentMonth && txCal.get(Calendar.YEAR) == currentYear
 
             if (tx.type == TransactionType.INCOME) {
