@@ -81,7 +81,7 @@ class BudgetViewModel(private val repository: BudgetRepository) : ViewModel() {
                     amount = amount,
                     type = TransactionType.INCOME,
                     category = category,
-                    date = System.currentTimeMillis(),
+                    timestamp = System.currentTimeMillis(),
                     note = note,
                     paymentMethod = "Virement / Mobile Money"
                 )
@@ -97,7 +97,7 @@ class BudgetViewModel(private val repository: BudgetRepository) : ViewModel() {
                     amount = amount,
                     type = TransactionType.EXPENSE,
                     category = category,
-                    date = System.currentTimeMillis(),
+                    timestamp = System.currentTimeMillis(),
                     note = note,
                     paymentMethod = paymentMethod
                 )
@@ -145,11 +145,11 @@ class BudgetViewModel(private val repository: BudgetRepository) : ViewModel() {
             // Déduit également comme épargne réalisée
             repository.insertTransaction(
                 TransactionItem(
-                    title = "Épargne vers objectif",
+                    description = "Épargne vers objectif",
                     amount = amount,
                     type = TransactionType.EXPENSE,
                     category = "Épargne",
-                    date = System.currentTimeMillis(),
+                    timestamp = System.currentTimeMillis(),
                     note = "Dépôt sur objectif d'épargne",
                     paymentMethod = "Mobile Money"
                 )
