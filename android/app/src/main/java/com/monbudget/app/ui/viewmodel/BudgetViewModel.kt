@@ -77,7 +77,7 @@ class BudgetViewModel(private val repository: BudgetRepository) : ViewModel() {
         viewModelScope.launch {
             repository.insertTransaction(
                 TransactionItem(
-                    title = title,
+                    description = title,
                     amount = amount,
                     type = TransactionType.INCOME,
                     category = category,
@@ -93,7 +93,7 @@ class BudgetViewModel(private val repository: BudgetRepository) : ViewModel() {
         viewModelScope.launch {
             repository.insertTransaction(
                 TransactionItem(
-                    title = title,
+                    description = title,
                     amount = amount,
                     type = TransactionType.EXPENSE,
                     category = category,
